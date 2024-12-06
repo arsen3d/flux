@@ -15,7 +15,10 @@
           "python",
           "output_script.py"
         ],
-        "Image": "arsen3d/flux:latest"
+        "Image": "arsen3d/flux:latest",
+        "EnvironmentVariables": [
+          {{.ENV}}
+        ]
       },
       "Engine": "Docker",
       "Network": {
